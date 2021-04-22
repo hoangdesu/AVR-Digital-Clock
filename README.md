@@ -16,7 +16,7 @@
 - Keeps track of time using ATmega328P's crystal oscillator; displays time using 7-segment
 - Extra functionality: heat sensor. Alarm will go off if the temperature exceeds 40 C degree
 - Ver 1 accuracy:
-![](./img/ver1.jpg)
+<img src="./img/ver1.JPG">
 
 **Version 2 - Clock with Time Keeper:** 
 - Keeps track of time using DS1302 RTC module; displays time on an LCD
