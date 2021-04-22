@@ -1,0 +1,1576 @@
+
+FinalAssignment.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000000e  00800100  00000916  000009aa  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000916  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000000c  0080010e  0080010e  000009b8  2**0
+                  ALLOC
+  3 .debug_aranges 00000070  00000000  00000000  000009b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_pubnames 00000141  00000000  00000000  00000a28  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000769  00000000  00000000  00000b69  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000001db  00000000  00000000  000012d2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000831  00000000  00000000  000014ad  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000c0  00000000  00000000  00001ce0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000292  00000000  00000000  00001da0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000323  00000000  00000000  00002032  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000098  00000000  00000000  00002355  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 35 00 	jmp	0x6a	; 0x6a <__ctors_end>
+   4:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+   8:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+   c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  10:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  14:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  18:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  1c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  20:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  24:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  28:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  2c:	0c 94 5f 00 	jmp	0xbe	; 0xbe <__vector_11>
+  30:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  34:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  38:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  3c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  40:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  44:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  48:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  4c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  50:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  54:	0c 94 a8 00 	jmp	0x150	; 0x150 <__vector_21>
+  58:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  5c:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  60:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+  64:	0c 94 5d 00 	jmp	0xba	; 0xba <__bad_interrupt>
+
+00000068 <__ctors_start>:
+  68:	30 04       	cpc	r3, r0
+
+0000006a <__ctors_end>:
+  6a:	11 24       	eor	r1, r1
+  6c:	1f be       	out	0x3f, r1	; 63
+  6e:	cf ef       	ldi	r28, 0xFF	; 255
+  70:	d8 e0       	ldi	r29, 0x08	; 8
+  72:	de bf       	out	0x3e, r29	; 62
+  74:	cd bf       	out	0x3d, r28	; 61
+
+00000076 <__do_copy_data>:
+  76:	11 e0       	ldi	r17, 0x01	; 1
+  78:	a0 e0       	ldi	r26, 0x00	; 0
+  7a:	b1 e0       	ldi	r27, 0x01	; 1
+  7c:	e6 e1       	ldi	r30, 0x16	; 22
+  7e:	f9 e0       	ldi	r31, 0x09	; 9
+  80:	02 c0       	rjmp	.+4      	; 0x86 <.do_copy_data_start>
+
+00000082 <.do_copy_data_loop>:
+  82:	05 90       	lpm	r0, Z+
+  84:	0d 92       	st	X+, r0
+
+00000086 <.do_copy_data_start>:
+  86:	ae 30       	cpi	r26, 0x0E	; 14
+  88:	b1 07       	cpc	r27, r17
+  8a:	d9 f7       	brne	.-10     	; 0x82 <.do_copy_data_loop>
+
+0000008c <__do_clear_bss>:
+  8c:	11 e0       	ldi	r17, 0x01	; 1
+  8e:	ae e0       	ldi	r26, 0x0E	; 14
+  90:	b1 e0       	ldi	r27, 0x01	; 1
+  92:	01 c0       	rjmp	.+2      	; 0x96 <.do_clear_bss_start>
+
+00000094 <.do_clear_bss_loop>:
+  94:	1d 92       	st	X+, r1
+
+00000096 <.do_clear_bss_start>:
+  96:	aa 31       	cpi	r26, 0x1A	; 26
+  98:	b1 07       	cpc	r27, r17
+  9a:	e1 f7       	brne	.-8      	; 0x94 <.do_clear_bss_loop>
+
+0000009c <__do_global_ctors>:
+  9c:	10 e0       	ldi	r17, 0x00	; 0
+  9e:	ca e6       	ldi	r28, 0x6A	; 106
+  a0:	d0 e0       	ldi	r29, 0x00	; 0
+  a2:	04 c0       	rjmp	.+8      	; 0xac <.do_global_ctors_start>
+
+000000a4 <.do_global_ctors_loop>:
+  a4:	22 97       	sbiw	r28, 0x02	; 2
+  a6:	fe 01       	movw	r30, r28
+  a8:	0e 94 85 04 	call	0x90a	; 0x90a <__tablejump__>
+
+000000ac <.do_global_ctors_start>:
+  ac:	c8 36       	cpi	r28, 0x68	; 104
+  ae:	d1 07       	cpc	r29, r17
+  b0:	c9 f7       	brne	.-14     	; 0xa4 <.do_global_ctors_loop>
+  b2:	0e 94 f9 03 	call	0x7f2	; 0x7f2 <main>
+  b6:	0c 94 89 04 	jmp	0x912	; 0x912 <_exit>
+
+000000ba <__bad_interrupt>:
+  ba:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000be <__vector_11>:
+				break;
+			}
+		}
+}
+
+ISR(TIMER1_COMPA_vect)
+  be:	1f 92       	push	r1
+  c0:	0f 92       	push	r0
+  c2:	0f b6       	in	r0, 0x3f	; 63
+  c4:	0f 92       	push	r0
+  c6:	11 24       	eor	r1, r1
+  c8:	8f 93       	push	r24
+  ca:	9f 93       	push	r25
+  cc:	ef 93       	push	r30
+  ce:	ff 93       	push	r31
+{
+	tick = 1;
+  d0:	81 e0       	ldi	r24, 0x01	; 1
+  d2:	90 e0       	ldi	r25, 0x00	; 0
+  d4:	90 93 16 01 	sts	0x0116, r25
+  d8:	80 93 15 01 	sts	0x0115, r24
+	alarmTime--;
+  dc:	80 91 18 01 	lds	r24, 0x0118
+  e0:	90 91 19 01 	lds	r25, 0x0119
+  e4:	01 97       	sbiw	r24, 0x01	; 1
+  e6:	90 93 19 01 	sts	0x0119, r25
+  ea:	80 93 18 01 	sts	0x0118, r24
+	PORTB ^= 1<<PORTB5;
+  ee:	e5 e2       	ldi	r30, 0x25	; 37
+  f0:	f0 e0       	ldi	r31, 0x00	; 0
+  f2:	80 81       	ld	r24, Z
+  f4:	90 e2       	ldi	r25, 0x20	; 32
+  f6:	89 27       	eor	r24, r25
+  f8:	80 83       	st	Z, r24
+}
+  fa:	ff 91       	pop	r31
+  fc:	ef 91       	pop	r30
+  fe:	9f 91       	pop	r25
+ 100:	8f 91       	pop	r24
+ 102:	0f 90       	pop	r0
+ 104:	0f be       	out	0x3f, r0	; 63
+ 106:	0f 90       	pop	r0
+ 108:	1f 90       	pop	r1
+ 10a:	18 95       	reti
+
+0000010c <_Z16init_temp_sensorv>:
+
+void init_temp_sensor()
+{
+	ADCSRA |= (1<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);
+ 10c:	aa e7       	ldi	r26, 0x7A	; 122
+ 10e:	b0 e0       	ldi	r27, 0x00	; 0
+ 110:	8c 91       	ld	r24, X
+ 112:	87 60       	ori	r24, 0x07	; 7
+ 114:	8c 93       	st	X, r24
+	ADMUX |= (1<<REFS0);
+ 116:	ec e7       	ldi	r30, 0x7C	; 124
+ 118:	f0 e0       	ldi	r31, 0x00	; 0
+ 11a:	80 81       	ld	r24, Z
+ 11c:	80 64       	ori	r24, 0x40	; 64
+ 11e:	80 83       	st	Z, r24
+	ADMUX |= (1<<ADLAR);
+ 120:	80 81       	ld	r24, Z
+ 122:	80 62       	ori	r24, 0x20	; 32
+ 124:	80 83       	st	Z, r24
+	ADCSRA |= (1<<ADATE);
+ 126:	8c 91       	ld	r24, X
+ 128:	80 62       	ori	r24, 0x20	; 32
+ 12a:	8c 93       	st	X, r24
+	ADCSRB = 0x00;
+ 12c:	10 92 7b 00 	sts	0x007B, r1
+	ADCSRA |= (1<<ADEN);
+ 130:	8c 91       	ld	r24, X
+ 132:	80 68       	ori	r24, 0x80	; 128
+ 134:	8c 93       	st	X, r24
+	ADCSRA |= (1<<ADSC);
+ 136:	8c 91       	ld	r24, X
+ 138:	80 64       	ori	r24, 0x40	; 64
+ 13a:	8c 93       	st	X, r24
+	ADCSRA |= (1<<ADIE);
+ 13c:	8c 91       	ld	r24, X
+ 13e:	88 60       	ori	r24, 0x08	; 8
+ 140:	8c 93       	st	X, r24
+	sei();
+ 142:	78 94       	sei
+	ADCSRA |= (1<<ADSC);
+ 144:	ea e7       	ldi	r30, 0x7A	; 122
+ 146:	f0 e0       	ldi	r31, 0x00	; 0
+ 148:	80 81       	ld	r24, Z
+ 14a:	80 64       	ori	r24, 0x40	; 64
+ 14c:	80 83       	st	Z, r24
+}
+ 14e:	08 95       	ret
+
+00000150 <__vector_21>:
+
+ISR(ADC_vect)
+ 150:	1f 92       	push	r1
+ 152:	0f 92       	push	r0
+ 154:	0f b6       	in	r0, 0x3f	; 63
+ 156:	0f 92       	push	r0
+ 158:	11 24       	eor	r1, r1
+ 15a:	8f 93       	push	r24
+ 15c:	ef 93       	push	r30
+ 15e:	ff 93       	push	r31
+{
+	// Activate alarm when temperature exceeds 40 degrees
+	if (ADCH > 40)
+ 160:	80 91 79 00 	lds	r24, 0x0079
+ 164:	89 32       	cpi	r24, 0x29	; 41
+ 166:	30 f0       	brcs	.+12     	; 0x174 <__vector_21+0x24>
+	{
+		PORTB |= 1<<PORTB4;
+ 168:	e5 e2       	ldi	r30, 0x25	; 37
+ 16a:	f0 e0       	ldi	r31, 0x00	; 0
+ 16c:	80 81       	ld	r24, Z
+ 16e:	80 61       	ori	r24, 0x10	; 16
+ 170:	80 83       	st	Z, r24
+ 172:	05 c0       	rjmp	.+10     	; 0x17e <__vector_21+0x2e>
+	}
+	else
+	{
+		PORTB &= ~(1<<PORTB4);
+ 174:	e5 e2       	ldi	r30, 0x25	; 37
+ 176:	f0 e0       	ldi	r31, 0x00	; 0
+ 178:	80 81       	ld	r24, Z
+ 17a:	8f 7e       	andi	r24, 0xEF	; 239
+ 17c:	80 83       	st	Z, r24
+	}
+}
+ 17e:	ff 91       	pop	r31
+ 180:	ef 91       	pop	r30
+ 182:	8f 91       	pop	r24
+ 184:	0f 90       	pop	r0
+ 186:	0f be       	out	0x3f, r0	; 63
+ 188:	0f 90       	pop	r0
+ 18a:	1f 90       	pop	r1
+ 18c:	18 95       	reti
+
+0000018e <_Z11select_modev>:
+
+void select_mode()
+{
+	// press button 1 to cycle through different modes
+	if (!(PINC & (1<<PINC3)))
+ 18e:	33 99       	sbic	0x06, 3	; 6
+ 190:	31 c0       	rjmp	.+98     	; 0x1f4 <_Z11select_modev+0x66>
+	{
+		switch (mode)
+ 192:	80 91 0e 01 	lds	r24, 0x010E
+ 196:	81 30       	cpi	r24, 0x01	; 1
+ 198:	99 f0       	breq	.+38     	; 0x1c0 <_Z11select_modev+0x32>
+ 19a:	81 30       	cpi	r24, 0x01	; 1
+ 19c:	18 f0       	brcs	.+6      	; 0x1a4 <_Z11select_modev+0x16>
+ 19e:	82 30       	cpi	r24, 0x02	; 2
+ 1a0:	49 f5       	brne	.+82     	; 0x1f4 <_Z11select_modev+0x66>
+ 1a2:	1c c0       	rjmp	.+56     	; 0x1dc <_Z11select_modev+0x4e>
+		{
+			case SET_hour:
+				mode = SET_minute;
+ 1a4:	81 e0       	ldi	r24, 0x01	; 1
+ 1a6:	80 93 0e 01 	sts	0x010E, r24
+ 1aa:	20 ed       	ldi	r18, 0xD0	; 208
+ 1ac:	37 e0       	ldi	r19, 0x07	; 7
+	__asm__ volatile (
+		"1: sbiw %0,1" "\n\t"
+		"brne 1b"
+		: "=w" (__count)
+		: "0" (__count)
+	);
+ 1ae:	40 e9       	ldi	r20, 0x90	; 144
+ 1b0:	51 e0       	ldi	r21, 0x01	; 1
+ 1b2:	ca 01       	movw	r24, r20
+ 1b4:	01 97       	sbiw	r24, 0x01	; 1
+ 1b6:	f1 f7       	brne	.-4      	; 0x1b4 <_Z11select_modev+0x26>
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 1b8:	21 50       	subi	r18, 0x01	; 1
+ 1ba:	30 40       	sbci	r19, 0x00	; 0
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 1bc:	d1 f7       	brne	.-12     	; 0x1b2 <_Z11select_modev+0x24>
+ 1be:	08 95       	ret
+				_delay_ms(200);
+			break;
+			case SET_minute:
+				mode = TIME;
+ 1c0:	82 e0       	ldi	r24, 0x02	; 2
+ 1c2:	80 93 0e 01 	sts	0x010E, r24
+ 1c6:	20 ed       	ldi	r18, 0xD0	; 208
+ 1c8:	37 e0       	ldi	r19, 0x07	; 7
+ 1ca:	40 e9       	ldi	r20, 0x90	; 144
+ 1cc:	51 e0       	ldi	r21, 0x01	; 1
+ 1ce:	ca 01       	movw	r24, r20
+ 1d0:	01 97       	sbiw	r24, 0x01	; 1
+ 1d2:	f1 f7       	brne	.-4      	; 0x1d0 <_Z11select_modev+0x42>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 1d4:	21 50       	subi	r18, 0x01	; 1
+ 1d6:	30 40       	sbci	r19, 0x00	; 0
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 1d8:	d1 f7       	brne	.-12     	; 0x1ce <_Z11select_modev+0x40>
+ 1da:	08 95       	ret
+				_delay_ms(200);
+			break;
+			case TIME:
+				mode = SET_hour;
+ 1dc:	10 92 0e 01 	sts	0x010E, r1
+ 1e0:	20 ed       	ldi	r18, 0xD0	; 208
+ 1e2:	37 e0       	ldi	r19, 0x07	; 7
+ 1e4:	40 e9       	ldi	r20, 0x90	; 144
+ 1e6:	51 e0       	ldi	r21, 0x01	; 1
+ 1e8:	ca 01       	movw	r24, r20
+ 1ea:	01 97       	sbiw	r24, 0x01	; 1
+ 1ec:	f1 f7       	brne	.-4      	; 0x1ea <_Z11select_modev+0x5c>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 1ee:	21 50       	subi	r18, 0x01	; 1
+ 1f0:	30 40       	sbci	r19, 0x00	; 0
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 1f2:	d1 f7       	brne	.-12     	; 0x1e8 <_Z11select_modev+0x5a>
+ 1f4:	08 95       	ret
+
+000001f6 <_Z15Timer_Frequencyh>:
+}
+
+void Timer_Frequency(uint8_t freq)
+{
+	//uint8_t freq = 1;
+	TCCR1B |= (1<<WGM12) | (1<<CS12);	// CTC mode, prescaler 256
+ 1f6:	e1 e8       	ldi	r30, 0x81	; 129
+ 1f8:	f0 e0       	ldi	r31, 0x00	; 0
+ 1fa:	90 81       	ld	r25, Z
+ 1fc:	9c 60       	ori	r25, 0x0C	; 12
+ 1fe:	90 83       	st	Z, r25
+	TIMSK1 = 1<<OCIE1A;					// enable output compare A match interrupt
+ 200:	92 e0       	ldi	r25, 0x02	; 2
+ 202:	90 93 6f 00 	sts	0x006F, r25
+	OCR1A = (F_CPU/(freq*2*128)-1);		// 1Hz
+ 206:	38 2f       	mov	r19, r24
+ 208:	20 e0       	ldi	r18, 0x00	; 0
+ 20a:	44 27       	eor	r20, r20
+ 20c:	37 fd       	sbrc	r19, 7
+ 20e:	40 95       	com	r20
+ 210:	54 2f       	mov	r21, r20
+ 212:	60 e0       	ldi	r22, 0x00	; 0
+ 214:	74 e2       	ldi	r23, 0x24	; 36
+ 216:	84 ef       	ldi	r24, 0xF4	; 244
+ 218:	90 e0       	ldi	r25, 0x00	; 0
+ 21a:	0e 94 4d 04 	call	0x89a	; 0x89a <__udivmodsi4>
+ 21e:	21 50       	subi	r18, 0x01	; 1
+ 220:	30 40       	sbci	r19, 0x00	; 0
+ 222:	30 93 89 00 	sts	0x0089, r19
+ 226:	20 93 88 00 	sts	0x0088, r18
+}
+ 22a:	08 95       	ret
+
+0000022c <_Z13set_hour_modev>:
+
+void set_hour_mode()
+ 22c:	cf 92       	push	r12
+ 22e:	df 92       	push	r13
+ 230:	ef 92       	push	r14
+ 232:	ff 92       	push	r15
+ 234:	0f 93       	push	r16
+ 236:	1f 93       	push	r17
+{
+	cli();					// clear interrupt bit
+ 238:	f8 94       	cli
+	clock_init = true;		// set clock back to init state
+ 23a:	81 e0       	ldi	r24, 0x01	; 1
+ 23c:	80 93 0a 01 	sts	0x010A, r24
+	second = 0;				// reset the second counter
+ 240:	10 92 14 01 	sts	0x0114, r1
+ 244:	10 92 13 01 	sts	0x0113, r1
+	display_second = false;
+ 248:	10 92 17 01 	sts	0x0117, r1
+	
+	// press button 2 to decrease the hour. Allow cycling through 24 hours
+	if (!(PINC & (1<<PINC1)))
+ 24c:	31 99       	sbic	0x06, 1	; 6
+ 24e:	1c c0       	rjmp	.+56     	; 0x288 <_Z13set_hour_modev+0x5c>
+	{
+		hour--;
+ 250:	80 91 0f 01 	lds	r24, 0x010F
+ 254:	90 91 10 01 	lds	r25, 0x0110
+ 258:	01 97       	sbiw	r24, 0x01	; 1
+ 25a:	90 93 10 01 	sts	0x0110, r25
+ 25e:	80 93 0f 01 	sts	0x010F, r24
+		if (hour < 0)
+ 262:	99 23       	and	r25, r25
+ 264:	34 f4       	brge	.+12     	; 0x272 <_Z13set_hour_modev+0x46>
+		{
+			hour = 24;
+ 266:	88 e1       	ldi	r24, 0x18	; 24
+ 268:	90 e0       	ldi	r25, 0x00	; 0
+ 26a:	90 93 10 01 	sts	0x0110, r25
+ 26e:	80 93 0f 01 	sts	0x010F, r24
+ 272:	20 ed       	ldi	r18, 0xD0	; 208
+ 274:	37 e0       	ldi	r19, 0x07	; 7
+ 276:	40 e9       	ldi	r20, 0x90	; 144
+ 278:	51 e0       	ldi	r21, 0x01	; 1
+ 27a:	ca 01       	movw	r24, r20
+ 27c:	01 97       	sbiw	r24, 0x01	; 1
+ 27e:	f1 f7       	brne	.-4      	; 0x27c <_Z13set_hour_modev+0x50>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 280:	21 50       	subi	r18, 0x01	; 1
+ 282:	30 40       	sbci	r19, 0x00	; 0
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 284:	d1 f7       	brne	.-12     	; 0x27a <_Z13set_hour_modev+0x4e>
+ 286:	1b c0       	rjmp	.+54     	; 0x2be <_Z13set_hour_modev+0x92>
+		}
+		_delay_ms(200);
+	}
+	
+	// press button 3 to increase the hour. Allow cycling through 24 hours
+	else if (!(PINC & (1<<PINC2)))
+ 288:	32 99       	sbic	0x06, 2	; 6
+ 28a:	19 c0       	rjmp	.+50     	; 0x2be <_Z13set_hour_modev+0x92>
+	{
+		hour++;
+ 28c:	80 91 0f 01 	lds	r24, 0x010F
+ 290:	90 91 10 01 	lds	r25, 0x0110
+ 294:	01 96       	adiw	r24, 0x01	; 1
+ 296:	90 93 10 01 	sts	0x0110, r25
+ 29a:	80 93 0f 01 	sts	0x010F, r24
+		if (hour > 24)
+ 29e:	49 97       	sbiw	r24, 0x19	; 25
+ 2a0:	24 f0       	brlt	.+8      	; 0x2aa <_Z13set_hour_modev+0x7e>
+		{
+			hour = 0;
+ 2a2:	10 92 10 01 	sts	0x0110, r1
+ 2a6:	10 92 0f 01 	sts	0x010F, r1
+ 2aa:	20 ed       	ldi	r18, 0xD0	; 208
+ 2ac:	37 e0       	ldi	r19, 0x07	; 7
+ 2ae:	40 e9       	ldi	r20, 0x90	; 144
+ 2b0:	51 e0       	ldi	r21, 0x01	; 1
+ 2b2:	ca 01       	movw	r24, r20
+ 2b4:	01 97       	sbiw	r24, 0x01	; 1
+ 2b6:	f1 f7       	brne	.-4      	; 0x2b4 <_Z13set_hour_modev+0x88>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 2b8:	21 50       	subi	r18, 0x01	; 1
+ 2ba:	30 40       	sbci	r19, 0x00	; 0
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 2bc:	d1 f7       	brne	.-12     	; 0x2b2 <_Z13set_hour_modev+0x86>
+		}
+		_delay_ms(200);
+	}
+	
+	// Blink LEDs to indicate its current mode
+	if (TCNT1 >= 0 && TCNT1 < OCR1A/2)
+ 2be:	e4 e8       	ldi	r30, 0x84	; 132
+ 2c0:	f0 e0       	ldi	r31, 0x00	; 0
+ 2c2:	80 81       	ld	r24, Z
+ 2c4:	91 81       	ldd	r25, Z+1	; 0x01
+ 2c6:	20 81       	ld	r18, Z
+ 2c8:	31 81       	ldd	r19, Z+1	; 0x01
+ 2ca:	80 91 88 00 	lds	r24, 0x0088
+ 2ce:	90 91 89 00 	lds	r25, 0x0089
+ 2d2:	96 95       	lsr	r25
+ 2d4:	87 95       	ror	r24
+ 2d6:	28 17       	cp	r18, r24
+ 2d8:	39 07       	cpc	r19, r25
+ 2da:	08 f0       	brcs	.+2      	; 0x2de <_Z13set_hour_modev+0xb2>
+ 2dc:	46 c0       	rjmp	.+140    	; 0x36a <_Z13set_hour_modev+0x13e>
+	{
+		// Digit 1
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);		// turn off the digits (reset ports B0 to B3 as OUTPUT)
+ 2de:	25 e2       	ldi	r18, 0x25	; 37
+ 2e0:	30 e0       	ldi	r19, 0x00	; 0
+ 2e2:	d9 01       	movw	r26, r18
+ 2e4:	8c 91       	ld	r24, X
+ 2e6:	8f 60       	ori	r24, 0x0F	; 15
+ 2e8:	8c 93       	st	X, r24
+		PORTB &= ~(1<<PORTB0);												// turn on port B0 specifically for digit 1
+ 2ea:	8c 91       	ld	r24, X
+ 2ec:	8e 7f       	andi	r24, 0xFE	; 254
+ 2ee:	8c 93       	st	X, r24
+		PORTD = number[hour/10];											// set the number to display on first digit
+ 2f0:	c0 90 0f 01 	lds	r12, 0x010F
+ 2f4:	d0 90 10 01 	lds	r13, 0x0110
+ 2f8:	c6 01       	movw	r24, r12
+ 2fa:	6a e0       	ldi	r22, 0x0A	; 10
+ 2fc:	70 e0       	ldi	r23, 0x00	; 0
+ 2fe:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 302:	00 e0       	ldi	r16, 0x00	; 0
+ 304:	11 e0       	ldi	r17, 0x01	; 1
+ 306:	f8 01       	movw	r30, r16
+ 308:	e6 0f       	add	r30, r22
+ 30a:	f7 1f       	adc	r31, r23
+ 30c:	80 81       	ld	r24, Z
+ 30e:	0f 2e       	mov	r0, r31
+ 310:	fb e2       	ldi	r31, 0x2B	; 43
+ 312:	ef 2e       	mov	r14, r31
+ 314:	ff 24       	eor	r15, r15
+ 316:	f0 2d       	mov	r31, r0
+ 318:	f7 01       	movw	r30, r14
+ 31a:	80 83       	st	Z, r24
+ 31c:	e0 e2       	ldi	r30, 0x20	; 32
+ 31e:	fe e4       	ldi	r31, 0x4E	; 78
+ 320:	cf 01       	movw	r24, r30
+ 322:	01 97       	sbiw	r24, 0x01	; 1
+ 324:	f1 f7       	brne	.-4      	; 0x322 <_Z13set_hour_modev+0xf6>
+		_delay_ms(5);														// displaying digit 1 for 5ms
+		PORTB |= 1<<PORTB0;													// turn off digit 1 after displaying
+ 326:	d9 01       	movw	r26, r18
+ 328:	8c 91       	ld	r24, X
+ 32a:	81 60       	ori	r24, 0x01	; 1
+ 32c:	8c 93       	st	X, r24
+
+		// Digit 2
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);		// displaying any digit with the same principle above
+ 32e:	8c 91       	ld	r24, X
+ 330:	8f 60       	ori	r24, 0x0F	; 15
+ 332:	8c 93       	st	X, r24
+		PORTB &= ~(1<<PORTB1);												// (multiplex)
+ 334:	8c 91       	ld	r24, X
+ 336:	8d 7f       	andi	r24, 0xFD	; 253
+ 338:	8c 93       	st	X, r24
+		PORTD = number[hour%10];
+ 33a:	c6 01       	movw	r24, r12
+ 33c:	6a e0       	ldi	r22, 0x0A	; 10
+ 33e:	70 e0       	ldi	r23, 0x00	; 0
+ 340:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 344:	08 0f       	add	r16, r24
+ 346:	19 1f       	adc	r17, r25
+ 348:	d8 01       	movw	r26, r16
+ 34a:	8c 91       	ld	r24, X
+ 34c:	d7 01       	movw	r26, r14
+ 34e:	8c 93       	st	X, r24
+ 350:	31 97       	sbiw	r30, 0x01	; 1
+ 352:	f1 f7       	brne	.-4      	; 0x350 <_Z13set_hour_modev+0x124>
+		_delay_ms(5);
+		PORTB |= 1<<PORTB1;
+ 354:	f9 01       	movw	r30, r18
+ 356:	80 81       	ld	r24, Z
+ 358:	82 60       	ori	r24, 0x02	; 2
+ 35a:	80 83       	st	Z, r24
+ 35c:	11 c0       	rjmp	.+34     	; 0x380 <_Z13set_hour_modev+0x154>
+	}
+	else if (TCNT1 >= OCR1A) {
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);		
+ 35e:	e5 e2       	ldi	r30, 0x25	; 37
+ 360:	f0 e0       	ldi	r31, 0x00	; 0
+ 362:	80 81       	ld	r24, Z
+ 364:	8f 60       	ori	r24, 0x0F	; 15
+ 366:	80 83       	st	Z, r24
+ 368:	0b c0       	rjmp	.+22     	; 0x380 <_Z13set_hour_modev+0x154>
+		PORTB &= ~(1<<PORTB1);												// (multiplex)
+		PORTD = number[hour%10];
+		_delay_ms(5);
+		PORTB |= 1<<PORTB1;
+	}
+	else if (TCNT1 >= OCR1A) {
+ 36a:	20 91 84 00 	lds	r18, 0x0084
+ 36e:	30 91 85 00 	lds	r19, 0x0085
+ 372:	80 91 88 00 	lds	r24, 0x0088
+ 376:	90 91 89 00 	lds	r25, 0x0089
+ 37a:	28 17       	cp	r18, r24
+ 37c:	39 07       	cpc	r19, r25
+ 37e:	78 f7       	brcc	.-34     	; 0x35e <_Z13set_hour_modev+0x132>
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);		
+	}
+}
+ 380:	1f 91       	pop	r17
+ 382:	0f 91       	pop	r16
+ 384:	ff 90       	pop	r15
+ 386:	ef 90       	pop	r14
+ 388:	df 90       	pop	r13
+ 38a:	cf 90       	pop	r12
+ 38c:	08 95       	ret
+
+0000038e <_Z15set_minute_modev>:
+
+void set_minute_mode()
+ 38e:	cf 92       	push	r12
+ 390:	df 92       	push	r13
+ 392:	ef 92       	push	r14
+ 394:	ff 92       	push	r15
+ 396:	0f 93       	push	r16
+ 398:	1f 93       	push	r17
+{
+	// press button 2 to decrease the minute. Allow cycling through 60 minutes
+	if (!(PINC & (1<<PINC1)))
+ 39a:	31 99       	sbic	0x06, 1	; 6
+ 39c:	1c c0       	rjmp	.+56     	; 0x3d6 <_Z15set_minute_modev+0x48>
+	{
+		minute--;
+ 39e:	80 91 11 01 	lds	r24, 0x0111
+ 3a2:	90 91 12 01 	lds	r25, 0x0112
+ 3a6:	01 97       	sbiw	r24, 0x01	; 1
+ 3a8:	90 93 12 01 	sts	0x0112, r25
+ 3ac:	80 93 11 01 	sts	0x0111, r24
+		if (minute < 0)
+ 3b0:	99 23       	and	r25, r25
+ 3b2:	34 f4       	brge	.+12     	; 0x3c0 <_Z15set_minute_modev+0x32>
+		{
+			minute = 59;
+ 3b4:	8b e3       	ldi	r24, 0x3B	; 59
+ 3b6:	90 e0       	ldi	r25, 0x00	; 0
+ 3b8:	90 93 12 01 	sts	0x0112, r25
+ 3bc:	80 93 11 01 	sts	0x0111, r24
+ 3c0:	20 ed       	ldi	r18, 0xD0	; 208
+ 3c2:	37 e0       	ldi	r19, 0x07	; 7
+ 3c4:	40 e9       	ldi	r20, 0x90	; 144
+ 3c6:	51 e0       	ldi	r21, 0x01	; 1
+ 3c8:	ca 01       	movw	r24, r20
+ 3ca:	01 97       	sbiw	r24, 0x01	; 1
+ 3cc:	f1 f7       	brne	.-4      	; 0x3ca <_Z15set_minute_modev+0x3c>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 3ce:	21 50       	subi	r18, 0x01	; 1
+ 3d0:	30 40       	sbci	r19, 0x00	; 0
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 3d2:	d1 f7       	brne	.-12     	; 0x3c8 <_Z15set_minute_modev+0x3a>
+ 3d4:	1b c0       	rjmp	.+54     	; 0x40c <_Z15set_minute_modev+0x7e>
+		}
+		_delay_ms(200);
+	}
+	
+	// press button 3 to increase the minute. Allow cycling through 60 minutes
+	else if (!(PINC & (1<<PINC2)))
+ 3d6:	32 99       	sbic	0x06, 2	; 6
+ 3d8:	19 c0       	rjmp	.+50     	; 0x40c <_Z15set_minute_modev+0x7e>
+	{
+		minute++;
+ 3da:	80 91 11 01 	lds	r24, 0x0111
+ 3de:	90 91 12 01 	lds	r25, 0x0112
+ 3e2:	01 96       	adiw	r24, 0x01	; 1
+ 3e4:	90 93 12 01 	sts	0x0112, r25
+ 3e8:	80 93 11 01 	sts	0x0111, r24
+		if (minute > 59)
+ 3ec:	cc 97       	sbiw	r24, 0x3c	; 60
+ 3ee:	24 f0       	brlt	.+8      	; 0x3f8 <_Z15set_minute_modev+0x6a>
+		{
+			minute = 0;
+ 3f0:	10 92 12 01 	sts	0x0112, r1
+ 3f4:	10 92 11 01 	sts	0x0111, r1
+ 3f8:	20 ed       	ldi	r18, 0xD0	; 208
+ 3fa:	37 e0       	ldi	r19, 0x07	; 7
+ 3fc:	40 e9       	ldi	r20, 0x90	; 144
+ 3fe:	51 e0       	ldi	r21, 0x01	; 1
+ 400:	ca 01       	movw	r24, r20
+ 402:	01 97       	sbiw	r24, 0x01	; 1
+ 404:	f1 f7       	brne	.-4      	; 0x402 <_Z15set_minute_modev+0x74>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 406:	21 50       	subi	r18, 0x01	; 1
+ 408:	30 40       	sbci	r19, 0x00	; 0
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 40a:	d1 f7       	brne	.-12     	; 0x400 <_Z15set_minute_modev+0x72>
+		}
+		_delay_ms(200);
+	}
+	
+	// Blink digit 3 and 4
+	if (TCNT1 >= 0 && TCNT1 < OCR1A/2)
+ 40c:	e4 e8       	ldi	r30, 0x84	; 132
+ 40e:	f0 e0       	ldi	r31, 0x00	; 0
+ 410:	80 81       	ld	r24, Z
+ 412:	91 81       	ldd	r25, Z+1	; 0x01
+ 414:	20 81       	ld	r18, Z
+ 416:	31 81       	ldd	r19, Z+1	; 0x01
+ 418:	80 91 88 00 	lds	r24, 0x0088
+ 41c:	90 91 89 00 	lds	r25, 0x0089
+ 420:	96 95       	lsr	r25
+ 422:	87 95       	ror	r24
+ 424:	28 17       	cp	r18, r24
+ 426:	39 07       	cpc	r19, r25
+ 428:	08 f0       	brcs	.+2      	; 0x42c <_Z15set_minute_modev+0x9e>
+ 42a:	46 c0       	rjmp	.+140    	; 0x4b8 <_Z15set_minute_modev+0x12a>
+	{
+		// Digit 3
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);
+ 42c:	25 e2       	ldi	r18, 0x25	; 37
+ 42e:	30 e0       	ldi	r19, 0x00	; 0
+ 430:	d9 01       	movw	r26, r18
+ 432:	8c 91       	ld	r24, X
+ 434:	8f 60       	ori	r24, 0x0F	; 15
+ 436:	8c 93       	st	X, r24
+		PORTB &= ~(1<<PORTB2);
+ 438:	8c 91       	ld	r24, X
+ 43a:	8b 7f       	andi	r24, 0xFB	; 251
+ 43c:	8c 93       	st	X, r24
+		PORTD = number[minute/10];
+ 43e:	c0 90 11 01 	lds	r12, 0x0111
+ 442:	d0 90 12 01 	lds	r13, 0x0112
+ 446:	c6 01       	movw	r24, r12
+ 448:	6a e0       	ldi	r22, 0x0A	; 10
+ 44a:	70 e0       	ldi	r23, 0x00	; 0
+ 44c:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 450:	00 e0       	ldi	r16, 0x00	; 0
+ 452:	11 e0       	ldi	r17, 0x01	; 1
+ 454:	f8 01       	movw	r30, r16
+ 456:	e6 0f       	add	r30, r22
+ 458:	f7 1f       	adc	r31, r23
+ 45a:	80 81       	ld	r24, Z
+ 45c:	0f 2e       	mov	r0, r31
+ 45e:	fb e2       	ldi	r31, 0x2B	; 43
+ 460:	ef 2e       	mov	r14, r31
+ 462:	ff 24       	eor	r15, r15
+ 464:	f0 2d       	mov	r31, r0
+ 466:	f7 01       	movw	r30, r14
+ 468:	80 83       	st	Z, r24
+ 46a:	e0 e2       	ldi	r30, 0x20	; 32
+ 46c:	fe e4       	ldi	r31, 0x4E	; 78
+ 46e:	cf 01       	movw	r24, r30
+ 470:	01 97       	sbiw	r24, 0x01	; 1
+ 472:	f1 f7       	brne	.-4      	; 0x470 <_Z15set_minute_modev+0xe2>
+		_delay_ms(5);
+		PORTB |= 1<<PORTB2;
+ 474:	d9 01       	movw	r26, r18
+ 476:	8c 91       	ld	r24, X
+ 478:	84 60       	ori	r24, 0x04	; 4
+ 47a:	8c 93       	st	X, r24
+		
+		// Digit 4
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);
+ 47c:	8c 91       	ld	r24, X
+ 47e:	8f 60       	ori	r24, 0x0F	; 15
+ 480:	8c 93       	st	X, r24
+		PORTB &= ~(1<<PORTB3);
+ 482:	8c 91       	ld	r24, X
+ 484:	87 7f       	andi	r24, 0xF7	; 247
+ 486:	8c 93       	st	X, r24
+		PORTD = number[minute%10];
+ 488:	c6 01       	movw	r24, r12
+ 48a:	6a e0       	ldi	r22, 0x0A	; 10
+ 48c:	70 e0       	ldi	r23, 0x00	; 0
+ 48e:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 492:	08 0f       	add	r16, r24
+ 494:	19 1f       	adc	r17, r25
+ 496:	d8 01       	movw	r26, r16
+ 498:	8c 91       	ld	r24, X
+ 49a:	d7 01       	movw	r26, r14
+ 49c:	8c 93       	st	X, r24
+ 49e:	31 97       	sbiw	r30, 0x01	; 1
+ 4a0:	f1 f7       	brne	.-4      	; 0x49e <_Z15set_minute_modev+0x110>
+		_delay_ms(5);
+		PORTB |= 1<<PORTB3;
+ 4a2:	f9 01       	movw	r30, r18
+ 4a4:	80 81       	ld	r24, Z
+ 4a6:	88 60       	ori	r24, 0x08	; 8
+ 4a8:	80 83       	st	Z, r24
+ 4aa:	11 c0       	rjmp	.+34     	; 0x4ce <_Z15set_minute_modev+0x140>
+	}
+	else if (TCNT1 >= OCR1A) {
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);
+ 4ac:	e5 e2       	ldi	r30, 0x25	; 37
+ 4ae:	f0 e0       	ldi	r31, 0x00	; 0
+ 4b0:	80 81       	ld	r24, Z
+ 4b2:	8f 60       	ori	r24, 0x0F	; 15
+ 4b4:	80 83       	st	Z, r24
+ 4b6:	0b c0       	rjmp	.+22     	; 0x4ce <_Z15set_minute_modev+0x140>
+		PORTB &= ~(1<<PORTB3);
+		PORTD = number[minute%10];
+		_delay_ms(5);
+		PORTB |= 1<<PORTB3;
+	}
+	else if (TCNT1 >= OCR1A) {
+ 4b8:	20 91 84 00 	lds	r18, 0x0084
+ 4bc:	30 91 85 00 	lds	r19, 0x0085
+ 4c0:	80 91 88 00 	lds	r24, 0x0088
+ 4c4:	90 91 89 00 	lds	r25, 0x0089
+ 4c8:	28 17       	cp	r18, r24
+ 4ca:	39 07       	cpc	r19, r25
+ 4cc:	78 f7       	brcc	.-34     	; 0x4ac <_Z15set_minute_modev+0x11e>
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);
+	}
+}
+ 4ce:	1f 91       	pop	r17
+ 4d0:	0f 91       	pop	r16
+ 4d2:	ff 90       	pop	r15
+ 4d4:	ef 90       	pop	r14
+ 4d6:	df 90       	pop	r13
+ 4d8:	cf 90       	pop	r12
+ 4da:	08 95       	ret
+
+000004dc <_Z9time_modev>:
+
+void time_mode()
+ 4dc:	cf 92       	push	r12
+ 4de:	df 92       	push	r13
+ 4e0:	ef 92       	push	r14
+ 4e2:	ff 92       	push	r15
+ 4e4:	0f 93       	push	r16
+ 4e6:	1f 93       	push	r17
+ 4e8:	cf 93       	push	r28
+ 4ea:	df 93       	push	r29
+{
+	// Detect if 1 second has elapsed from the timer interrupt
+	if (tick == 1)
+ 4ec:	80 91 15 01 	lds	r24, 0x0115
+ 4f0:	90 91 16 01 	lds	r25, 0x0116
+ 4f4:	01 97       	sbiw	r24, 0x01	; 1
+ 4f6:	69 f4       	brne	.+26     	; 0x512 <_Z9time_modev+0x36>
+	{
+		second++;
+ 4f8:	80 91 13 01 	lds	r24, 0x0113
+ 4fc:	90 91 14 01 	lds	r25, 0x0114
+ 500:	01 96       	adiw	r24, 0x01	; 1
+ 502:	90 93 14 01 	sts	0x0114, r25
+ 506:	80 93 13 01 	sts	0x0113, r24
+		tick = 0;
+ 50a:	10 92 16 01 	sts	0x0116, r1
+ 50e:	10 92 15 01 	sts	0x0115, r1
+	}
+	
+	// if (second == 1)		// <- Use this condition to observe quicker. 1 minute = 1 second
+	if (second > 59)		// increment minute
+ 512:	80 91 13 01 	lds	r24, 0x0113
+ 516:	90 91 14 01 	lds	r25, 0x0114
+ 51a:	cc 97       	sbiw	r24, 0x3c	; 60
+ 51c:	6c f0       	brlt	.+26     	; 0x538 <_Z9time_modev+0x5c>
+	{
+		minute++;
+ 51e:	80 91 11 01 	lds	r24, 0x0111
+ 522:	90 91 12 01 	lds	r25, 0x0112
+ 526:	01 96       	adiw	r24, 0x01	; 1
+ 528:	90 93 12 01 	sts	0x0112, r25
+ 52c:	80 93 11 01 	sts	0x0111, r24
+		second = 0;
+ 530:	10 92 14 01 	sts	0x0114, r1
+ 534:	10 92 13 01 	sts	0x0113, r1
+	}
+	
+	if (minute > 59)		// increment hour
+ 538:	80 91 11 01 	lds	r24, 0x0111
+ 53c:	90 91 12 01 	lds	r25, 0x0112
+ 540:	cc 97       	sbiw	r24, 0x3c	; 60
+ 542:	6c f0       	brlt	.+26     	; 0x55e <_Z9time_modev+0x82>
+	{
+		hour++;
+ 544:	80 91 0f 01 	lds	r24, 0x010F
+ 548:	90 91 10 01 	lds	r25, 0x0110
+ 54c:	01 96       	adiw	r24, 0x01	; 1
+ 54e:	90 93 10 01 	sts	0x0110, r25
+ 552:	80 93 0f 01 	sts	0x010F, r24
+		minute = 0;
+ 556:	10 92 12 01 	sts	0x0112, r1
+ 55a:	10 92 11 01 	sts	0x0111, r1
+	}
+	
+	if (hour > 24)			// reset timer
+ 55e:	80 91 0f 01 	lds	r24, 0x010F
+ 562:	90 91 10 01 	lds	r25, 0x0110
+ 566:	49 97       	sbiw	r24, 0x19	; 25
+ 568:	64 f0       	brlt	.+24     	; 0x582 <_Z9time_modev+0xa6>
+	{
+		hour = 0;
+ 56a:	10 92 10 01 	sts	0x0110, r1
+ 56e:	10 92 0f 01 	sts	0x010F, r1
+		minute = 0;
+ 572:	10 92 12 01 	sts	0x0112, r1
+ 576:	10 92 11 01 	sts	0x0111, r1
+		second = 0;
+ 57a:	10 92 14 01 	sts	0x0114, r1
+ 57e:	10 92 13 01 	sts	0x0113, r1
+	}
+	
+	// Switch between display modes
+	if (!(PINC & (1<<PINC2)))
+ 582:	32 99       	sbic	0x06, 2	; 6
+ 584:	10 c0       	rjmp	.+32     	; 0x5a6 <_Z9time_modev+0xca>
+	{
+		display_second = !display_second;
+ 586:	80 91 17 01 	lds	r24, 0x0117
+ 58a:	91 e0       	ldi	r25, 0x01	; 1
+ 58c:	89 27       	eor	r24, r25
+ 58e:	80 93 17 01 	sts	0x0117, r24
+ 592:	20 ed       	ldi	r18, 0xD0	; 208
+ 594:	37 e0       	ldi	r19, 0x07	; 7
+ 596:	40 e9       	ldi	r20, 0x90	; 144
+ 598:	51 e0       	ldi	r21, 0x01	; 1
+ 59a:	ca 01       	movw	r24, r20
+ 59c:	01 97       	sbiw	r24, 0x01	; 1
+ 59e:	f1 f7       	brne	.-4      	; 0x59c <_Z9time_modev+0xc0>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 5a0:	21 50       	subi	r18, 0x01	; 1
+ 5a2:	30 40       	sbci	r19, 0x00	; 0
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 5a4:	d1 f7       	brne	.-12     	; 0x59a <_Z9time_modev+0xbe>
+	}
+	
+	// Normal mode: Display Hour:Minute
+	// Second mode: Display elapsed seconds
+	
+	if (display_second == false)
+ 5a6:	80 91 17 01 	lds	r24, 0x0117
+ 5aa:	88 23       	and	r24, r24
+ 5ac:	09 f0       	breq	.+2      	; 0x5b0 <_Z9time_modev+0xd4>
+ 5ae:	8e c0       	rjmp	.+284    	; 0x6cc <_Z9time_modev+0x1f0>
+	{
+		// Digit 1
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);
+ 5b0:	25 e2       	ldi	r18, 0x25	; 37
+ 5b2:	30 e0       	ldi	r19, 0x00	; 0
+ 5b4:	d9 01       	movw	r26, r18
+ 5b6:	8c 91       	ld	r24, X
+ 5b8:	8f 60       	ori	r24, 0x0F	; 15
+ 5ba:	8c 93       	st	X, r24
+		PORTB &= ~(1<<PORTB0);
+ 5bc:	8c 91       	ld	r24, X
+ 5be:	8e 7f       	andi	r24, 0xFE	; 254
+ 5c0:	8c 93       	st	X, r24
+		PORTD = number[hour/10];
+ 5c2:	c0 91 0f 01 	lds	r28, 0x010F
+ 5c6:	d0 91 10 01 	lds	r29, 0x0110
+ 5ca:	ce 01       	movw	r24, r28
+ 5cc:	6a e0       	ldi	r22, 0x0A	; 10
+ 5ce:	70 e0       	ldi	r23, 0x00	; 0
+ 5d0:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 5d4:	fb 01       	movw	r30, r22
+ 5d6:	e0 50       	subi	r30, 0x00	; 0
+ 5d8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 5da:	80 81       	ld	r24, Z
+ 5dc:	8b b9       	out	0x0b, r24	; 11
+ 5de:	80 e2       	ldi	r24, 0x20	; 32
+ 5e0:	9e e4       	ldi	r25, 0x4E	; 78
+ 5e2:	01 97       	sbiw	r24, 0x01	; 1
+ 5e4:	f1 f7       	brne	.-4      	; 0x5e2 <_Z9time_modev+0x106>
+		_delay_ms(5);
+		PORTB |= 1<<PORTB0;
+ 5e6:	f9 01       	movw	r30, r18
+ 5e8:	80 81       	ld	r24, Z
+ 5ea:	81 60       	ori	r24, 0x01	; 1
+ 5ec:	80 83       	st	Z, r24
+		
+		// Digit 2
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);
+ 5ee:	80 81       	ld	r24, Z
+ 5f0:	8f 60       	ori	r24, 0x0F	; 15
+ 5f2:	80 83       	st	Z, r24
+		PORTB &= ~(1<<PORTB1);
+ 5f4:	80 81       	ld	r24, Z
+ 5f6:	8d 7f       	andi	r24, 0xFD	; 253
+ 5f8:	80 83       	st	Z, r24
+		
+		// Display the dot at digit 2 to observe the seconds
+		if (TCNT1 <= OCR1A / 2)
+ 5fa:	20 91 84 00 	lds	r18, 0x0084
+ 5fe:	30 91 85 00 	lds	r19, 0x0085
+ 602:	80 91 88 00 	lds	r24, 0x0088
+ 606:	90 91 89 00 	lds	r25, 0x0089
+ 60a:	96 95       	lsr	r25
+ 60c:	87 95       	ror	r24
+ 60e:	82 17       	cp	r24, r18
+ 610:	93 07       	cpc	r25, r19
+ 612:	60 f0       	brcs	.+24     	; 0x62c <_Z9time_modev+0x150>
+		//if (second % 2 == 0) // Blink twice as slow ¯\_(?)_/¯
+		{
+			PORTD = number[hour%10] | (1<<PORTD7);
+ 614:	ce 01       	movw	r24, r28
+ 616:	6a e0       	ldi	r22, 0x0A	; 10
+ 618:	70 e0       	ldi	r23, 0x00	; 0
+ 61a:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 61e:	fc 01       	movw	r30, r24
+ 620:	e0 50       	subi	r30, 0x00	; 0
+ 622:	ff 4f       	sbci	r31, 0xFF	; 255
+ 624:	80 81       	ld	r24, Z
+ 626:	80 68       	ori	r24, 0x80	; 128
+ 628:	8b b9       	out	0x0b, r24	; 11
+ 62a:	0a c0       	rjmp	.+20     	; 0x640 <_Z9time_modev+0x164>
+		}
+		else
+		{
+			PORTD = number[hour%10];
+ 62c:	ce 01       	movw	r24, r28
+ 62e:	6a e0       	ldi	r22, 0x0A	; 10
+ 630:	70 e0       	ldi	r23, 0x00	; 0
+ 632:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 636:	fc 01       	movw	r30, r24
+ 638:	e0 50       	subi	r30, 0x00	; 0
+ 63a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 63c:	80 81       	ld	r24, Z
+ 63e:	8b b9       	out	0x0b, r24	; 11
+ 640:	0f 2e       	mov	r0, r31
+ 642:	f0 e2       	ldi	r31, 0x20	; 32
+ 644:	ef 2e       	mov	r14, r31
+ 646:	fe e4       	ldi	r31, 0x4E	; 78
+ 648:	ff 2e       	mov	r15, r31
+ 64a:	f0 2d       	mov	r31, r0
+ 64c:	c7 01       	movw	r24, r14
+ 64e:	01 97       	sbiw	r24, 0x01	; 1
+ 650:	f1 f7       	brne	.-4      	; 0x64e <_Z9time_modev+0x172>
+		}
+		_delay_ms(5);
+		PORTB |= 1<<PORTB1;
+ 652:	25 e2       	ldi	r18, 0x25	; 37
+ 654:	30 e0       	ldi	r19, 0x00	; 0
+ 656:	d9 01       	movw	r26, r18
+ 658:	8c 91       	ld	r24, X
+ 65a:	82 60       	ori	r24, 0x02	; 2
+ 65c:	8c 93       	st	X, r24
+		
+		// Digit 3
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);
+ 65e:	8c 91       	ld	r24, X
+ 660:	8f 60       	ori	r24, 0x0F	; 15
+ 662:	8c 93       	st	X, r24
+		PORTB &= ~(1<<PORTB2);
+ 664:	8c 91       	ld	r24, X
+ 666:	8b 7f       	andi	r24, 0xFB	; 251
+ 668:	8c 93       	st	X, r24
+		PORTD = number[minute/10];
+ 66a:	c0 90 11 01 	lds	r12, 0x0111
+ 66e:	d0 90 12 01 	lds	r13, 0x0112
+ 672:	c6 01       	movw	r24, r12
+ 674:	6a e0       	ldi	r22, 0x0A	; 10
+ 676:	70 e0       	ldi	r23, 0x00	; 0
+ 678:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 67c:	00 e0       	ldi	r16, 0x00	; 0
+ 67e:	11 e0       	ldi	r17, 0x01	; 1
+ 680:	f8 01       	movw	r30, r16
+ 682:	e6 0f       	add	r30, r22
+ 684:	f7 1f       	adc	r31, r23
+ 686:	80 81       	ld	r24, Z
+ 688:	eb e2       	ldi	r30, 0x2B	; 43
+ 68a:	f0 e0       	ldi	r31, 0x00	; 0
+ 68c:	80 83       	st	Z, r24
+ 68e:	c7 01       	movw	r24, r14
+ 690:	01 97       	sbiw	r24, 0x01	; 1
+ 692:	f1 f7       	brne	.-4      	; 0x690 <_Z9time_modev+0x1b4>
+		_delay_ms(5);
+		PORTB |= 1<<PORTB2;
+ 694:	d9 01       	movw	r26, r18
+ 696:	8c 91       	ld	r24, X
+ 698:	84 60       	ori	r24, 0x04	; 4
+ 69a:	8c 93       	st	X, r24
+		
+		// Digit 4
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);
+ 69c:	8c 91       	ld	r24, X
+ 69e:	8f 60       	ori	r24, 0x0F	; 15
+ 6a0:	8c 93       	st	X, r24
+		PORTB &= ~(1<<PORTB3);
+ 6a2:	8c 91       	ld	r24, X
+ 6a4:	87 7f       	andi	r24, 0xF7	; 247
+ 6a6:	8c 93       	st	X, r24
+		PORTD = number[minute%10];
+ 6a8:	c6 01       	movw	r24, r12
+ 6aa:	6a e0       	ldi	r22, 0x0A	; 10
+ 6ac:	70 e0       	ldi	r23, 0x00	; 0
+ 6ae:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 6b2:	08 0f       	add	r16, r24
+ 6b4:	19 1f       	adc	r17, r25
+ 6b6:	d8 01       	movw	r26, r16
+ 6b8:	8c 91       	ld	r24, X
+ 6ba:	80 83       	st	Z, r24
+ 6bc:	c7 01       	movw	r24, r14
+ 6be:	01 97       	sbiw	r24, 0x01	; 1
+ 6c0:	f1 f7       	brne	.-4      	; 0x6be <_Z9time_modev+0x1e2>
+		_delay_ms(5);
+		PORTB |= 1<<PORTB3;
+ 6c2:	f9 01       	movw	r30, r18
+ 6c4:	80 81       	ld	r24, Z
+ 6c6:	88 60       	ori	r24, 0x08	; 8
+ 6c8:	80 83       	st	Z, r24
+ 6ca:	4e c0       	rjmp	.+156    	; 0x768 <_Z9time_modev+0x28c>
+	}
+	else
+	{
+		// Digit 3
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);
+ 6cc:	25 e2       	ldi	r18, 0x25	; 37
+ 6ce:	30 e0       	ldi	r19, 0x00	; 0
+ 6d0:	d9 01       	movw	r26, r18
+ 6d2:	8c 91       	ld	r24, X
+ 6d4:	8f 60       	ori	r24, 0x0F	; 15
+ 6d6:	8c 93       	st	X, r24
+		PORTB &= ~(1<<PORTB2);
+ 6d8:	8c 91       	ld	r24, X
+ 6da:	8b 7f       	andi	r24, 0xFB	; 251
+ 6dc:	8c 93       	st	X, r24
+		PORTD = number[second/10];
+ 6de:	80 91 13 01 	lds	r24, 0x0113
+ 6e2:	90 91 14 01 	lds	r25, 0x0114
+ 6e6:	6a e0       	ldi	r22, 0x0A	; 10
+ 6e8:	70 e0       	ldi	r23, 0x00	; 0
+ 6ea:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 6ee:	00 e0       	ldi	r16, 0x00	; 0
+ 6f0:	11 e0       	ldi	r17, 0x01	; 1
+ 6f2:	f8 01       	movw	r30, r16
+ 6f4:	e6 0f       	add	r30, r22
+ 6f6:	f7 1f       	adc	r31, r23
+ 6f8:	80 81       	ld	r24, Z
+ 6fa:	eb e2       	ldi	r30, 0x2B	; 43
+ 6fc:	f0 e0       	ldi	r31, 0x00	; 0
+ 6fe:	80 83       	st	Z, r24
+ 700:	80 e2       	ldi	r24, 0x20	; 32
+ 702:	9e e4       	ldi	r25, 0x4E	; 78
+ 704:	01 97       	sbiw	r24, 0x01	; 1
+ 706:	f1 f7       	brne	.-4      	; 0x704 <_Z9time_modev+0x228>
+		_delay_ms(5);
+		PORTB |= 1<<PORTB2;
+ 708:	d9 01       	movw	r26, r18
+ 70a:	8c 91       	ld	r24, X
+ 70c:	84 60       	ori	r24, 0x04	; 4
+ 70e:	8c 93       	st	X, r24
+		
+		// Digit 4
+		PORTB |= (1<<PORTB0) | (1<<PORTB1) | (1<<PORTB2) | (1<<PORTB3);
+ 710:	8c 91       	ld	r24, X
+ 712:	8f 60       	ori	r24, 0x0F	; 15
+ 714:	8c 93       	st	X, r24
+		PORTB &= ~(1<<PORTB3);
+ 716:	8c 91       	ld	r24, X
+ 718:	87 7f       	andi	r24, 0xF7	; 247
+ 71a:	8c 93       	st	X, r24
+		PORTD = number[second%10];
+ 71c:	80 91 13 01 	lds	r24, 0x0113
+ 720:	90 91 14 01 	lds	r25, 0x0114
+ 724:	6a e0       	ldi	r22, 0x0A	; 10
+ 726:	70 e0       	ldi	r23, 0x00	; 0
+ 728:	0e 94 3a 04 	call	0x874	; 0x874 <__divmodhi4>
+ 72c:	08 0f       	add	r16, r24
+ 72e:	19 1f       	adc	r17, r25
+ 730:	d8 01       	movw	r26, r16
+ 732:	8c 91       	ld	r24, X
+ 734:	80 83       	st	Z, r24
+		// Display the dot at digit 4
+		if (TCNT1 <= OCR1A / 2)
+ 736:	20 91 84 00 	lds	r18, 0x0084
+ 73a:	30 91 85 00 	lds	r19, 0x0085
+ 73e:	80 91 88 00 	lds	r24, 0x0088
+ 742:	90 91 89 00 	lds	r25, 0x0089
+ 746:	96 95       	lsr	r25
+ 748:	87 95       	ror	r24
+ 74a:	82 17       	cp	r24, r18
+ 74c:	93 07       	cpc	r25, r19
+ 74e:	18 f0       	brcs	.+6      	; 0x756 <_Z9time_modev+0x27a>
+		{
+			PORTD |= (1<<PORTD7);
+ 750:	80 81       	ld	r24, Z
+ 752:	80 68       	ori	r24, 0x80	; 128
+ 754:	80 83       	st	Z, r24
+ 756:	80 e2       	ldi	r24, 0x20	; 32
+ 758:	9e e4       	ldi	r25, 0x4E	; 78
+ 75a:	01 97       	sbiw	r24, 0x01	; 1
+ 75c:	f1 f7       	brne	.-4      	; 0x75a <_Z9time_modev+0x27e>
+		}
+		_delay_ms(5);
+		PORTB |= 1<<PORTB3;
+ 75e:	e5 e2       	ldi	r30, 0x25	; 37
+ 760:	f0 e0       	ldi	r31, 0x00	; 0
+ 762:	80 81       	ld	r24, Z
+ 764:	88 60       	ori	r24, 0x08	; 8
+ 766:	80 83       	st	Z, r24
+	}
+}
+ 768:	df 91       	pop	r29
+ 76a:	cf 91       	pop	r28
+ 76c:	1f 91       	pop	r17
+ 76e:	0f 91       	pop	r16
+ 770:	ff 90       	pop	r15
+ 772:	ef 90       	pop	r14
+ 774:	df 90       	pop	r13
+ 776:	cf 90       	pop	r12
+ 778:	08 95       	ret
+
+0000077a <_Z14activate_alarmv>:
+
+
+void activate_alarm()
+{	
+	if (alarmTime == 0)
+ 77a:	80 91 18 01 	lds	r24, 0x0118
+ 77e:	90 91 19 01 	lds	r25, 0x0119
+ 782:	00 97       	sbiw	r24, 0x00	; 0
+ 784:	61 f4       	brne	.+24     	; 0x79e <_Z14activate_alarmv+0x24>
+	{
+		PORTB &= ~(1<<PORTB4);
+ 786:	e5 e2       	ldi	r30, 0x25	; 37
+ 788:	f0 e0       	ldi	r31, 0x00	; 0
+ 78a:	80 81       	ld	r24, Z
+ 78c:	8f 7e       	andi	r24, 0xEF	; 239
+ 78e:	80 83       	st	Z, r24
+		alarmTime = -1;
+ 790:	8f ef       	ldi	r24, 0xFF	; 255
+ 792:	9f ef       	ldi	r25, 0xFF	; 255
+ 794:	90 93 19 01 	sts	0x0119, r25
+ 798:	80 93 18 01 	sts	0x0118, r24
+ 79c:	17 c0       	rjmp	.+46     	; 0x7cc <_Z14activate_alarmv+0x52>
+	}
+	else if (alarmTime > 0 && alarmTime < 6)
+ 79e:	01 97       	sbiw	r24, 0x01	; 1
+ 7a0:	05 97       	sbiw	r24, 0x05	; 5
+ 7a2:	a0 f4       	brcc	.+40     	; 0x7cc <_Z14activate_alarmv+0x52>
+	{
+		// press button 2 to quickly disable the alarm
+		if (!(PINC & (1<<PINC1)))
+ 7a4:	31 99       	sbic	0x06, 1	; 6
+ 7a6:	03 c0       	rjmp	.+6      	; 0x7ae <_Z14activate_alarmv+0x34>
+		{
+			alarm_on = false;
+ 7a8:	10 92 0b 01 	sts	0x010B, r1
+ 7ac:	0a c0       	rjmp	.+20     	; 0x7c2 <_Z14activate_alarmv+0x48>
+		}
+		
+		if (alarm_on)
+ 7ae:	80 91 0b 01 	lds	r24, 0x010B
+ 7b2:	88 23       	and	r24, r24
+ 7b4:	31 f0       	breq	.+12     	; 0x7c2 <_Z14activate_alarmv+0x48>
+		{
+			PORTB |= 1<<PORTB4;
+ 7b6:	e5 e2       	ldi	r30, 0x25	; 37
+ 7b8:	f0 e0       	ldi	r31, 0x00	; 0
+ 7ba:	80 81       	ld	r24, Z
+ 7bc:	80 61       	ori	r24, 0x10	; 16
+ 7be:	80 83       	st	Z, r24
+ 7c0:	05 c0       	rjmp	.+10     	; 0x7cc <_Z14activate_alarmv+0x52>
+		}
+		else
+		{
+			PORTB &= ~(1<<PORTB4);
+ 7c2:	e5 e2       	ldi	r30, 0x25	; 37
+ 7c4:	f0 e0       	ldi	r31, 0x00	; 0
+ 7c6:	80 81       	ld	r24, Z
+ 7c8:	8f 7e       	andi	r24, 0xEF	; 239
+ 7ca:	80 83       	st	Z, r24
+		}
+	}
+	
+	// Press button 1 to toggle the alarm
+	if (!(PINC & (1<<PINC1)))
+ 7cc:	31 99       	sbic	0x06, 1	; 6
+ 7ce:	10 c0       	rjmp	.+32     	; 0x7f0 <_Z14activate_alarmv+0x76>
+	{
+		PORTB ^= (1<<PORTB4);
+ 7d0:	e5 e2       	ldi	r30, 0x25	; 37
+ 7d2:	f0 e0       	ldi	r31, 0x00	; 0
+ 7d4:	80 81       	ld	r24, Z
+ 7d6:	90 e1       	ldi	r25, 0x10	; 16
+ 7d8:	89 27       	eor	r24, r25
+ 7da:	80 83       	st	Z, r24
+ 7dc:	28 ee       	ldi	r18, 0xE8	; 232
+ 7de:	33 e0       	ldi	r19, 0x03	; 3
+ 7e0:	40 e9       	ldi	r20, 0x90	; 144
+ 7e2:	51 e0       	ldi	r21, 0x01	; 1
+ 7e4:	ca 01       	movw	r24, r20
+ 7e6:	01 97       	sbiw	r24, 0x01	; 1
+ 7e8:	f1 f7       	brne	.-4      	; 0x7e6 <_Z14activate_alarmv+0x6c>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 7ea:	21 50       	subi	r18, 0x01	; 1
+ 7ec:	30 40       	sbci	r19, 0x00	; 0
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 7ee:	d1 f7       	brne	.-12     	; 0x7e4 <_Z14activate_alarmv+0x6a>
+ 7f0:	08 95       	ret
+
+000007f2 <main>:
+void set_minute_mode();
+void time_mode();
+void activate_alarm();
+void init_temp_sensor();
+
+int main(void)
+ 7f2:	0f 93       	push	r16
+ 7f4:	1f 93       	push	r17
+ 7f6:	cf 93       	push	r28
+ 7f8:	df 93       	push	r29
+{
+    DDRB = 0xFF;	// set port B for digit and misc output
+ 7fa:	8f ef       	ldi	r24, 0xFF	; 255
+ 7fc:	84 b9       	out	0x04, r24	; 4
+	DDRD = 0xFF;	// set port D for LED output
+ 7fe:	8a b9       	out	0x0a, r24	; 10
+	DDRC = 0x00;	// set port C for input
+ 800:	17 b8       	out	0x07, r1	; 7
+	
+	init_temp_sensor();
+ 802:	0e 94 86 00 	call	0x10c	; 0x10c <_Z16init_temp_sensorv>
+	
+	Timer_Frequency(1); // set the timer frequency to 1Hz
+ 806:	81 e0       	ldi	r24, 0x01	; 1
+ 808:	0e 94 fb 00 	call	0x1f6	; 0x1f6 <_Z15Timer_Frequencyh>
+				break;
+				
+			case TIME:
+				if (clock_init)
+				{
+					cli();
+ 80c:	08 ee       	ldi	r16, 0xE8	; 232
+ 80e:	13 e0       	ldi	r17, 0x03	; 3
+ 810:	c0 e9       	ldi	r28, 0x90	; 144
+ 812:	d1 e0       	ldi	r29, 0x01	; 1
+	
+	Timer_Frequency(1); // set the timer frequency to 1Hz
+	
+    while (1) 
+    {
+		select_mode(); // press button 1 to cycle through the modes
+ 814:	0e 94 c7 00 	call	0x18e	; 0x18e <_Z11select_modev>
+		
+		switch (mode)
+ 818:	80 91 0e 01 	lds	r24, 0x010E
+ 81c:	81 30       	cpi	r24, 0x01	; 1
+ 81e:	41 f0       	breq	.+16     	; 0x830 <main+0x3e>
+ 820:	81 30       	cpi	r24, 0x01	; 1
+ 822:	18 f0       	brcs	.+6      	; 0x82a <main+0x38>
+ 824:	82 30       	cpi	r24, 0x02	; 2
+ 826:	b1 f7       	brne	.-20     	; 0x814 <main+0x22>
+ 828:	06 c0       	rjmp	.+12     	; 0x836 <main+0x44>
+		{
+			case SET_hour:
+				set_hour_mode();
+ 82a:	0e 94 16 01 	call	0x22c	; 0x22c <_Z13set_hour_modev>
+ 82e:	f2 cf       	rjmp	.-28     	; 0x814 <main+0x22>
+				break;
+				
+			case SET_minute:
+				set_minute_mode();
+ 830:	0e 94 c7 01 	call	0x38e	; 0x38e <_Z15set_minute_modev>
+ 834:	ef cf       	rjmp	.-34     	; 0x814 <main+0x22>
+				break;
+				
+			case TIME:
+				if (clock_init)
+ 836:	80 91 0a 01 	lds	r24, 0x010A
+ 83a:	88 23       	and	r24, r24
+ 83c:	61 f0       	breq	.+24     	; 0x856 <main+0x64>
+				{
+					cli();
+ 83e:	f8 94       	cli
+ 840:	98 01       	movw	r18, r16
+ 842:	ce 01       	movw	r24, r28
+ 844:	01 97       	sbiw	r24, 0x01	; 1
+ 846:	f1 f7       	brne	.-4      	; 0x844 <main+0x52>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 848:	21 50       	subi	r18, 0x01	; 1
+ 84a:	30 40       	sbci	r19, 0x00	; 0
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 84c:	d1 f7       	brne	.-12     	; 0x842 <main+0x50>
+					_delay_ms(100);
+					sei();
+ 84e:	78 94       	sei
+					clock_init = false;
+ 850:	10 92 0a 01 	sts	0x010A, r1
+ 854:	02 c0       	rjmp	.+4      	; 0x85a <main+0x68>
+				} 
+				else
+				{
+					time_mode();
+ 856:	0e 94 6e 02 	call	0x4dc	; 0x4dc <_Z9time_modev>
+				}
+				
+				activate_alarm();
+ 85a:	0e 94 bd 03 	call	0x77a	; 0x77a <_Z14activate_alarmv>
+ 85e:	da cf       	rjmp	.-76     	; 0x814 <main+0x22>
+
+00000860 <_GLOBAL__I_number>:
+bool alarm_on = true;
+bool display_second = false;
+
+/* Set the alarm here */
+int setAlarm = 7;				// set alarm time in seconds. Multiply by 60 to set alarm in minutes
+int alarmTime = setAlarm + 5;	// activate alarm for 5 seconds
+ 860:	80 91 0c 01 	lds	r24, 0x010C
+ 864:	90 91 0d 01 	lds	r25, 0x010D
+ 868:	05 96       	adiw	r24, 0x05	; 5
+ 86a:	90 93 19 01 	sts	0x0119, r25
+ 86e:	80 93 18 01 	sts	0x0118, r24
+	if (!(PINC & (1<<PINC1)))
+	{
+		PORTB ^= (1<<PORTB4);
+		_delay_ms(100);
+	}
+ 872:	08 95       	ret
+
+00000874 <__divmodhi4>:
+ 874:	97 fb       	bst	r25, 7
+ 876:	09 2e       	mov	r0, r25
+ 878:	07 26       	eor	r0, r23
+ 87a:	0a d0       	rcall	.+20     	; 0x890 <__divmodhi4_neg1>
+ 87c:	77 fd       	sbrc	r23, 7
+ 87e:	04 d0       	rcall	.+8      	; 0x888 <__divmodhi4_neg2>
+ 880:	2e d0       	rcall	.+92     	; 0x8de <__udivmodhi4>
+ 882:	06 d0       	rcall	.+12     	; 0x890 <__divmodhi4_neg1>
+ 884:	00 20       	and	r0, r0
+ 886:	1a f4       	brpl	.+6      	; 0x88e <__divmodhi4_exit>
+
+00000888 <__divmodhi4_neg2>:
+ 888:	70 95       	com	r23
+ 88a:	61 95       	neg	r22
+ 88c:	7f 4f       	sbci	r23, 0xFF	; 255
+
+0000088e <__divmodhi4_exit>:
+ 88e:	08 95       	ret
+
+00000890 <__divmodhi4_neg1>:
+ 890:	f6 f7       	brtc	.-4      	; 0x88e <__divmodhi4_exit>
+ 892:	90 95       	com	r25
+ 894:	81 95       	neg	r24
+ 896:	9f 4f       	sbci	r25, 0xFF	; 255
+ 898:	08 95       	ret
+
+0000089a <__udivmodsi4>:
+ 89a:	a1 e2       	ldi	r26, 0x21	; 33
+ 89c:	1a 2e       	mov	r1, r26
+ 89e:	aa 1b       	sub	r26, r26
+ 8a0:	bb 1b       	sub	r27, r27
+ 8a2:	fd 01       	movw	r30, r26
+ 8a4:	0d c0       	rjmp	.+26     	; 0x8c0 <__udivmodsi4_ep>
+
+000008a6 <__udivmodsi4_loop>:
+ 8a6:	aa 1f       	adc	r26, r26
+ 8a8:	bb 1f       	adc	r27, r27
+ 8aa:	ee 1f       	adc	r30, r30
+ 8ac:	ff 1f       	adc	r31, r31
+ 8ae:	a2 17       	cp	r26, r18
+ 8b0:	b3 07       	cpc	r27, r19
+ 8b2:	e4 07       	cpc	r30, r20
+ 8b4:	f5 07       	cpc	r31, r21
+ 8b6:	20 f0       	brcs	.+8      	; 0x8c0 <__udivmodsi4_ep>
+ 8b8:	a2 1b       	sub	r26, r18
+ 8ba:	b3 0b       	sbc	r27, r19
+ 8bc:	e4 0b       	sbc	r30, r20
+ 8be:	f5 0b       	sbc	r31, r21
+
+000008c0 <__udivmodsi4_ep>:
+ 8c0:	66 1f       	adc	r22, r22
+ 8c2:	77 1f       	adc	r23, r23
+ 8c4:	88 1f       	adc	r24, r24
+ 8c6:	99 1f       	adc	r25, r25
+ 8c8:	1a 94       	dec	r1
+ 8ca:	69 f7       	brne	.-38     	; 0x8a6 <__udivmodsi4_loop>
+ 8cc:	60 95       	com	r22
+ 8ce:	70 95       	com	r23
+ 8d0:	80 95       	com	r24
+ 8d2:	90 95       	com	r25
+ 8d4:	9b 01       	movw	r18, r22
+ 8d6:	ac 01       	movw	r20, r24
+ 8d8:	bd 01       	movw	r22, r26
+ 8da:	cf 01       	movw	r24, r30
+ 8dc:	08 95       	ret
+
+000008de <__udivmodhi4>:
+ 8de:	aa 1b       	sub	r26, r26
+ 8e0:	bb 1b       	sub	r27, r27
+ 8e2:	51 e1       	ldi	r21, 0x11	; 17
+ 8e4:	07 c0       	rjmp	.+14     	; 0x8f4 <__udivmodhi4_ep>
+
+000008e6 <__udivmodhi4_loop>:
+ 8e6:	aa 1f       	adc	r26, r26
+ 8e8:	bb 1f       	adc	r27, r27
+ 8ea:	a6 17       	cp	r26, r22
+ 8ec:	b7 07       	cpc	r27, r23
+ 8ee:	10 f0       	brcs	.+4      	; 0x8f4 <__udivmodhi4_ep>
+ 8f0:	a6 1b       	sub	r26, r22
+ 8f2:	b7 0b       	sbc	r27, r23
+
+000008f4 <__udivmodhi4_ep>:
+ 8f4:	88 1f       	adc	r24, r24
+ 8f6:	99 1f       	adc	r25, r25
+ 8f8:	5a 95       	dec	r21
+ 8fa:	a9 f7       	brne	.-22     	; 0x8e6 <__udivmodhi4_loop>
+ 8fc:	80 95       	com	r24
+ 8fe:	90 95       	com	r25
+ 900:	bc 01       	movw	r22, r24
+ 902:	cd 01       	movw	r24, r26
+ 904:	08 95       	ret
+
+00000906 <__tablejump2__>:
+ 906:	ee 0f       	add	r30, r30
+ 908:	ff 1f       	adc	r31, r31
+
+0000090a <__tablejump__>:
+ 90a:	05 90       	lpm	r0, Z+
+ 90c:	f4 91       	lpm	r31, Z+
+ 90e:	e0 2d       	mov	r30, r0
+ 910:	09 94       	ijmp
+
+00000912 <_exit>:
+ 912:	f8 94       	cli
+
+00000914 <__stop_program>:
+ 914:	ff cf       	rjmp	.-2      	; 0x914 <__stop_program>

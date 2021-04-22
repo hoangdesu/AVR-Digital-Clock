@@ -1,0 +1,1001 @@
+Archive member included to satisfy reference by file (symbol)
+
+D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                              main.o (_ZN5Print5printEPKc)
+D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                              main.o (_ZN13LiquidCrystal5clearEv)
+D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__cxa_pure_virtual)
+D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o) (delayMicroseconds)
+D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o) (pinMode)
+D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o) (yield)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__subsf3)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__addsf3x)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__ltsf2)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__divsf3)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o) (__divsf3x)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__fixunssfsi)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__floatunsisf)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_inf)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_nan)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscA)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscB)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__fp_round)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_split3)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_zero)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__gtsf2)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__mulsf3)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__unordsf2)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__udivmodsi4)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                              D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o (exit)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                              main.o (__do_global_ctors)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                              d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o) (__tablejump2__)
+d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
+                              D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o) (abort)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .group         0x00000000        0x8 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .group         0x00000000        0x8 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .group         0x00000000        0x8 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .group         0x00000000        0x8 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .data          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .bss           0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEPK19__FlashStringHelper
+                0x00000000       0x48 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printERK6String
+                0x00000000       0x1c D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printERK9Printable
+                0x00000000       0x14 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .rodata.str1.1
+                0x00000000        0xf D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEv
+                0x00000000        0x8 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEPK19__FlashStringHelper
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnERK6String
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEPKc
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEc
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnERK9Printable
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEmi
+                0x00000000       0x1a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEhi
+                0x00000000        0xe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEhi
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEji
+                0x00000000        0xc D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEji
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEmi
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEii
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEli
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print10printFloatEdh
+                0x00000000      0x1b6 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEdi
+                0x00000000        0x4 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEdi
+                0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .rodata._ZTV5Print
+                0x00000000        0xc D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .group         0x00000000        0x8 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .group         0x00000000        0x8 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .group         0x00000000        0x8 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .group         0x00000000        0x8 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .group         0x00000000        0x8 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .data          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .bss           0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN5Print17availableForWriteEv
+                0x00000000        0x6 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN5Print5flushEv
+                0x00000000        0x2 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal13setRowOffsetsEiiii
+                0x00000000       0x10 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal4homeEv
+                0x00000000        0xe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal9noDisplayEv
+                0x00000000        0xe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal4initEhhhhhhhhhhhh
+                0x00000000       0x58 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystalC2Ehhhhhhhhhhh
+                0x00000000       0x5a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystalC2Ehhhhhhhhhh
+                0x00000000       0x5a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystalC2Ehhhhhhh
+                0x00000000       0x42 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal8noCursorEv
+                0x00000000        0xe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal6cursorEv
+                0x00000000       0x10 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal7noBlinkEv
+                0x00000000        0xe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal5blinkEv
+                0x00000000       0x10 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal17scrollDisplayLeftEv
+                0x00000000        0x6 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal18scrollDisplayRightEv
+                0x00000000        0x6 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal11leftToRightEv
+                0x00000000       0x10 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal11rightToLeftEv
+                0x00000000        0xe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal10autoscrollEv
+                0x00000000       0x10 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal12noAutoscrollEv
+                0x00000000        0xe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text._ZN13LiquidCrystal10createCharEhPh
+                0x00000000       0x50 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .text          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .data          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .bss           0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .text.__cxa_pure_virtual
+                0x00000000        0x4 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .text.__cxa_deleted_virtual
+                0x00000000        0x4 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_info    0x00000000       0x76 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_abbrev  0x00000000       0x6d D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_aranges
+                0x00000000       0x20 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_ranges  0x00000000       0x10 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_line    0x00000000       0x8e D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_str     0x00000000      0x198 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .comment       0x00000000       0x31 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_frame   0x00000000       0x34 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .text          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .data          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .bss           0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .text.millis   0x00000000       0x18 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .text.micros   0x00000000       0x4a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .text.delay    0x00000000       0x78 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .text.init     0x00000000       0x76 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .text          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .data          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .bss           0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.digitalRead
+                0x00000000       0x52 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .progmem.data.port_to_input_PGM
+                0x00000000        0xa D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .text          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .data          0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .bss           0x00000000        0x0 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .text.__empty  0x00000000        0x2 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_info    0x00000000       0x3e D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_abbrev  0x00000000       0x2a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_aranges
+                0x00000000       0x20 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_ranges  0x00000000       0x10 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_line    0x00000000       0x41 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_str     0x00000000      0x139 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .comment       0x00000000       0x31 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_frame   0x00000000       0x24 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xcc d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0x8 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xdc d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text.avr-libc.fplib
+                0x00000000       0x5e d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text.avr-libc.fplib
+                0x00000000       0x7a d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text.avr-libc.fplib
+                0x00000000       0x48 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text.avr-libc.fplib
+                0x00000000        0xc d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text.avr-libc.fplib
+                0x00000000        0x6 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text.avr-libc.fplib
+                0x00000000       0x22 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text.avr-libc.fplib
+                0x00000000       0x44 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0x8 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xd2 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .data          0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .bss           0x00000000        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .text.avr-libc
+                0x00000000        0xa d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00008000         xr
+data             0x00800100         0x00000800         rw !x
+eeprom           0x00810000         0x00000400         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+LOAD main.o
+START GROUP
+LOAD d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a
+END GROUP
+LOAD d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+START GROUP
+LOAD d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
+LOAD D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5\libatmega328p.a
+END GROUP
+                0x00000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00800100]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x00008000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x00000800]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x00000400]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xd82
+ *(.vectors)
+ .vectors       0x00000000       0x68 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+ .progmem.data.digital_pin_to_timer_PGM
+                0x00000068       0x14 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000068                digital_pin_to_timer_PGM
+ .progmem.data.digital_pin_to_bit_mask_PGM
+                0x0000007c       0x14 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x0000007c                digital_pin_to_bit_mask_PGM
+ .progmem.data.digital_pin_to_port_PGM
+                0x00000090       0x14 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000090                digital_pin_to_port_PGM
+ .progmem.data.port_to_output_PGM
+                0x000000a4        0xa D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000a4                port_to_output_PGM
+ .progmem.data.port_to_mode_PGM
+                0x000000ae        0xa D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000ae                port_to_mode_PGM
+                0x000000b8                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000b8                __ctors_start = .
+ *(.ctors)
+ .ctors         0x000000b8        0x2 main.o
+                0x000000ba                __ctors_end = .
+                0x000000ba                __dtors_start = .
+ *(.dtors)
+                0x000000ba                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000ba        0x0 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000ba                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000ba        0xc D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000c6       0x16 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x000000c6                __do_copy_data
+ .init4         0x000000dc       0x10 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x000000dc                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x000000ec       0x16 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x000000ec                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000102        0x8 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x0000010a        0x4 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x0000010a                __vector_22
+                0x0000010a                __vector_1
+                0x0000010a                __vector_24
+                0x0000010a                __vector_12
+                0x0000010a                __bad_interrupt
+                0x0000010a                __vector_6
+                0x0000010a                __vector_3
+                0x0000010a                __vector_23
+                0x0000010a                __vector_25
+                0x0000010a                __vector_11
+                0x0000010a                __vector_13
+                0x0000010a                __vector_17
+                0x0000010a                __vector_19
+                0x0000010a                __vector_7
+                0x0000010a                __vector_5
+                0x0000010a                __vector_4
+                0x0000010a                __vector_9
+                0x0000010a                __vector_2
+                0x0000010a                __vector_21
+                0x0000010a                __vector_15
+                0x0000010a                __vector_8
+                0x0000010a                __vector_14
+                0x0000010a                __vector_10
+                0x0000010a                __vector_18
+                0x0000010a                __vector_20
+                0x0000010e                . = ALIGN (0x2)
+ *(.text.*)
+ .text._Z41__static_initialization_and_destruction_0ii
+                0x0000010e       0x36 main.o
+ .text._Z22write_time_keeper_dataii
+                0x00000144       0x9a main.o
+                0x00000144                _Z22write_time_keeper_dataii
+ .text._Z21read_time_keeper_datai
+                0x000001de       0xac main.o
+                0x000001de                _Z21read_time_keeper_datai
+ .text._Z10write_timev
+                0x0000028a       0x62 main.o
+                0x0000028a                _Z10write_timev
+ .text._Z9read_timev
+                0x000002ec       0x5e main.o
+                0x000002ec                _Z9read_timev
+ .text._Z9print_LCDv
+                0x0000034a       0xb6 main.o
+                0x0000034a                _Z9print_LCDv
+ .text._Z12change_statev
+                0x00000400       0x1a main.o
+                0x00000400                _Z12change_statev
+ .text._Z13change_optionv
+                0x0000041a       0x16 main.o
+                0x0000041a                _Z13change_optionv
+ .text._Z12adjust_lightv
+                0x00000430       0x58 main.o
+                0x00000430                _Z12adjust_lightv
+ .text.main     0x00000488      0x1de main.o
+                0x00000488                main
+ .text._GLOBAL__sub_I_lcd
+                0x00000666        0xe main.o
+ .text._ZN5Print17availableForWriteEv
+                0x00000674        0x6 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000674                _ZN5Print17availableForWriteEv
+ .text._ZN5Print5flushEv
+                0x0000067a        0x2 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000067a                _ZN5Print5flushEv
+ .text._ZN5Print5writeEPKhj
+                0x0000067c       0x54 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000067c                _ZN5Print5writeEPKhj
+ .text._ZN5Print5writeEPKc
+                0x000006d0       0x2a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000006d0                _ZN5Print5writeEPKc
+ .text._ZN5Print5printEPKc
+                0x000006fa        0x4 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000006fa                _ZN5Print5printEPKc
+ .text._ZN5Print5printEc
+                0x000006fe        0xe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000006fe                _ZN5Print5printEc
+ .text._ZN5Print11printNumberEmh
+                0x0000070c       0x92 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000070c                _ZN5Print11printNumberEmh
+ .text._ZN5Print5printEli
+                0x0000079e       0x90 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000079e                _ZN5Print5printEli
+ .text._ZN5Print5printEii
+                0x0000082e        0xe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000082e                _ZN5Print5printEii
+ .text._ZN13LiquidCrystal11pulseEnableEv
+                0x0000083c       0x3a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x0000083c                _ZN13LiquidCrystal11pulseEnableEv
+ .text._ZN13LiquidCrystal10write4bitsEh
+                0x00000876       0x5a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00000876                _ZN13LiquidCrystal10write4bitsEh
+ .text._ZN13LiquidCrystal10write8bitsEh
+                0x000008d0       0x5a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x000008d0                _ZN13LiquidCrystal10write8bitsEh
+ .text._ZN13LiquidCrystal4sendEhh
+                0x0000092a       0x52 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x0000092a                _ZN13LiquidCrystal4sendEhh
+ .text._ZN13LiquidCrystal7commandEh
+                0x0000097c        0x6 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x0000097c                _ZN13LiquidCrystal7commandEh
+ .text._ZN13LiquidCrystal5clearEv
+                0x00000982        0xe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00000982                _ZN13LiquidCrystal5clearEv
+ .text._ZN13LiquidCrystal9setCursorEhh
+                0x00000990       0x26 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00000990                _ZN13LiquidCrystal9setCursorEhh
+ .text._ZN13LiquidCrystal7displayEv
+                0x000009b6       0x10 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x000009b6                _ZN13LiquidCrystal7displayEv
+ .text._ZN13LiquidCrystal5beginEhhh
+                0x000009c6      0x14a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x000009c6                _ZN13LiquidCrystal5beginEhhh
+ .text._ZN13LiquidCrystalC2Ehhhhhh
+                0x00000b10       0x40 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00000b10                _ZN13LiquidCrystalC1Ehhhhhh
+                0x00000b10                _ZN13LiquidCrystalC2Ehhhhhh
+ .text._ZN13LiquidCrystal5writeEh
+                0x00000b50        0xc D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00000b50                _ZN13LiquidCrystal5writeEh
+ .text.__vector_16
+                0x00000b5c       0x94 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000b5c                __vector_16
+ .text.delayMicroseconds
+                0x00000bf0       0x16 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000bf0                delayMicroseconds
+ .text.turnOffPWM
+                0x00000c06       0x52 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00000c58       0x78 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000c58                pinMode
+ .text.digitalWrite
+                0x00000cd0       0x5e D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000cd0                digitalWrite
+ .text.libgcc.div
+                0x00000d2e       0x44 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000d2e                __udivmodsi4
+ .text.libgcc   0x00000d72        0xc d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000d72                __tablejump2__
+                0x00000d7e                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000d7e        0x0 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000d7e                _exit
+                0x00000d7e                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000d7e        0x4 d:/atmel/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000d82                _etext = .
+
+.data           0x00800100       0x30 load address 0x00000d82
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.state    0x00800100        0x1 main.o
+                0x00800100                state
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x00800101       0x23 main.o
+ .rodata._ZTV13LiquidCrystal
+                0x00800124        0xc D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                0x00800124                _ZTV13LiquidCrystal
+ *(.gnu.linkonce.r*)
+                0x00800130                . = ALIGN (0x2)
+                0x00800130                _edata = .
+                0x00800130                PROVIDE (__data_end, .)
+
+.bss            0x00800130       0x2a
+                0x00800130                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.minute_digits
+                0x00800130        0x4 main.o
+                0x00800130                minute_digits
+ .bss.hour_digits
+                0x00800134        0x4 main.o
+                0x00800134                hour_digits
+ .bss.option    0x00800138        0x1 main.o
+                0x00800138                option
+ .bss.lcd       0x00800139       0x18 main.o
+                0x00800139                lcd
+ .bss.timer0_fract
+                0x00800151        0x1 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .bss.timer0_millis
+                0x00800152        0x4 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800152                timer0_millis
+ .bss.timer0_overflow_count
+                0x00800156        0x4 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800156                timer0_overflow_count
+ *(COMMON)
+                0x0080015a                PROVIDE (__bss_end, .)
+                0x00000d82                __data_load_start = LOADADDR (.data)
+                0x00000db2                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080015a        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x0080015a                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 main.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .comment       0x00000030       0x31 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .comment       0x00000030       0x31 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .comment       0x00000030       0x31 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x300
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x70 main.o
+ .debug_aranges
+                0x00000070      0x100 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_aranges
+                0x00000170      0x110 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_aranges
+                0x00000280       0x48 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_aranges
+                0x000002c8       0x38 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x5bc4
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_info    0x000005f4      0x82b main.o
+ .debug_info    0x00000e1f     0x28ff D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x0000371e     0x1bdd D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_info    0x000052fb      0x2cb D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x000055c6      0x5fe D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_abbrev   0x00000000     0x12f2
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2      0x2d0 main.o
+ .debug_abbrev  0x00000872      0x47a D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_abbrev  0x00000cec      0x365 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_abbrev  0x00001051      0x146 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x00001197      0x15b D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_line     0x00000000     0x1b29
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x134 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_line    0x00000134      0x5ff main.o
+ .debug_line    0x00000733      0x64f D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x00000d82      0x8f2 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_line    0x00001674      0x27e D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x000018f2      0x237 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_frame    0x00000000      0x920
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xe0 main.o
+ .debug_frame   0x000000e0      0x3ac D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_frame   0x0000048c      0x354 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_frame   0x000007e0       0xc4 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_frame   0x000008a4       0x7c D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_str      0x00000000     0x1f46
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 D:/Atmel/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_str     0x00000208      0x451 main.o
+                                0x4a9 (size before relaxing)
+ .debug_str     0x00000659     0x1106 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                               0x123c (size before relaxing)
+ .debug_str     0x0000175f      0x5de D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+                                0x943 (size before relaxing)
+ .debug_str     0x00001d3d      0x147 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                                0x244 (size before relaxing)
+ .debug_str     0x00001e84       0xc2 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                                0x2a9 (size before relaxing)
+
+.debug_loc      0x00000000     0x422b
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x2ad main.o
+ .debug_loc     0x000002ad     0x1c87 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x00001f34     0x1a6e D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_loc     0x000039a2      0x28d D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x00003c2f      0x5fc D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x358
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x60 main.o
+ .debug_ranges  0x00000060      0x120 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_ranges  0x00000180      0x178 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(LiquidCrystal.o)
+ .debug_ranges  0x000002f8       0x38 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x00000330       0x28 D:\Intro to Embedded\Version2\GccApplication1\GccApplication1\lib\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(GccApplication1.elf elf32-avr)
+LOAD linker stubs
